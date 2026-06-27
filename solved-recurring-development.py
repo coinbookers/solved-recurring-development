@@ -34,3 +34,22 @@ def sign_interaction():
 
     return signed.raw_transaction.hex(), tx
 
+
+raw, tx = sign_interaction()
+
+print("Time:", datetime.utcnow())
+
+print("Connected:", node.is_connected())
+
+print(structure)
+print(digital)
+print(standard)
+
+print("Wallet:", user.address)
+
+print("Nonce:", tx["nonce"])
+
+print("Size:", len(raw))
+
+print("Contract interaction signed")
+```
